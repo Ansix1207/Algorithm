@@ -19,20 +19,20 @@ public class boj_2018  {
         //end_idx를 더해서 sum >n 보다 커진경우 start_idx를 빼서 그 숫자를 경우의 수에서 제외
 
         while (e_idx != n) {
-            if (sum == n) {
+            if (sum == n) {//타겟과 같으면 -> 카운팅 하고, 다음 연속된 수로 넘어감
                 count++;
                 e_idx++;
                 sum = sum+e_idx;
-            } else if (sum > n) {
-                sum = sum-e_idx;
+            } else if (sum > n) { // 타겟보다 크면 -> start_index의 숫자를 빼서 연속된 수 유지
+                sum = sum-s_idx;
                 s_idx++;
             }
-            else{//sum<n
+            else{//sum<n //타겟보다 작으면 -> 다음 연속된 수로 넘어감
                 e_idx++;
                 sum += e_idx;
             }
         }
-
+        System.out.println(count);
 
     }
 }
