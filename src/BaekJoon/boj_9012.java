@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
-import java.util.StringTokenizer;
 
 //TODO:2023/05/24/괄호 https://www.acmicpc.net/problem/9012
 /*
@@ -26,7 +25,7 @@ public class boj_9012 {
         int n = Integer.parseInt(br.readLine());
         for (int i = 0; i < n; i++) {
             String str = br.readLine();
-            Stack<String> st = new Stack<>()
+            Stack<String> st = new Stack<>();
             for (int j = 0; j < str.length(); j++) {
                 String token = str.substring(j,j+1);
                 if(token.equals("(")){
