@@ -14,10 +14,10 @@ import java.util.StringTokenizer;
 //size: 스택에 들어있는 정수의 개수를 출력한다.
 //empty: 스택이 비어있으면 1, 아니면 0을 출력한다.
 //top: 스택의 가장 위에 있는 정수를 출력한다. 만약 스택에 들어있는 정수가 없는 경우에는 -1을 출력한다.
-class Stack{
+class boj_Stack{
     ArrayList<Integer> list = new ArrayList<>();
     int size = 0;
-    Stack() {
+    boj_Stack() {
     }
     void push(int x) {
         size++;
@@ -55,7 +55,7 @@ public class boj_10828 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         StringTokenizer stk;
-        Stack stack = new Stack();
+        boj_Stack stack = new boj_Stack();
 
         for (int i = 0; i < n; i++) {
             stk = new StringTokenizer(br.readLine());
