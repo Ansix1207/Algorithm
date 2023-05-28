@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-//todo: 1158번 요세푸스 문제 https://www.acmicpc.net/problem/1158
+//todo: 1158번 요세푸스 문제 (실버4) https://www.acmicpc.net/problem/1158
 //todo: 성공
 public class boj_1158 {
     public static void main(String[] args) throws IOException {
