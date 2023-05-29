@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 
 //TODO:2023/05/24/괄호 https://www.acmicpc.net/problem/9012
+//TODO: 성공
 /*
 문제
 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다.
