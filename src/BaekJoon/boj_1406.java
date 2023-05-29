@@ -3,7 +3,7 @@ package BaekJoon;
 import java.io.*;
 import java.util.Stack;
 
-//todo:에디터 https://www.acmicpc.net/problem/1406
+//todo:1406번 에디터 https://www.acmicpc.net/problem/1406
 //todo:성공
 public class boj_1406 {
     public static void main(String[] args) throws IOException {
