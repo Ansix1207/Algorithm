@@ -41,7 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.boj_12891">
+  <component name="RunManager" selected="Application.boj_11003">
     <configuration name="boj_10799" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_10799" />
       <module name="Algorithm" />
@@ -55,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boj_10866" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_10866" />
+    <configuration name="boj_11003" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_11003" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boj_1874" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_1874" />
+    <configuration name="boj_17413" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_17413" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.boj_11003" />
+        <item itemvalue="Application.boj_17413" />
         <item itemvalue="Application.boj_12891" />
         <item itemvalue="Application.boj_10799" />
         <item itemvalue="Application.boj_1406" />
-        <item itemvalue="Application.boj_1874" />
-        <item itemvalue="Application.boj_10866" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +128,8 @@
       <workItem from="1684932793748" duration="19841000" />
       <workItem from="1685059524003" duration="1826000" />
       <workItem from="1685371903864" duration="3563000" />
-      <workItem from="1685406049665" duration="4905000" />
+      <workItem from="1685406049665" duration="4974000" />
+      <workItem from="1685437529639" duration="9771000" />
     </task>
     <servers />
   </component>
@@ -160,5 +161,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BaekJoon/boj_11003.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="deque.toString()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
