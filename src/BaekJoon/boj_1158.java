@@ -13,9 +13,9 @@ public class boj_1158 {
         StringTokenizer stk = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(stk.nextToken());
         int k = Integer.parseInt(stk.nextToken());
-        ArrayList<Integer> que = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
-            que.add(i);
+            list.add(i);
         }
         int idx = 0;
         // 1 2 3 4 5 6 7
@@ -31,13 +31,13 @@ public class boj_1158 {
          *      2- 인덱스가 quesize를넘으면 idx = 0 으로 간다.
          * */
         for (int i = 0; i < n; i++) {
-            idx = (idx+k-1)% que.size();
+            idx = (idx+k-1)% list.size();
             if(i==0)System.out.print("<");
             if(i+1==n){
-                System.out.print(que.remove(idx)+">");
+                System.out.print(list.remove(idx)+">");
                 break;
             }
-            System.out.print(que.remove(idx)+", ");
+            System.out.print(list.remove(idx)+", ");
         }
     }
 }
