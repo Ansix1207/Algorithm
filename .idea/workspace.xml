@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d77fa4a7-793b-4ba6-8afd-471ef475d663" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BaekJoon/boj_2743.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaekJoon/boj_10820.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaekJoon/boj_10820.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaekJoon/boj_11655.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaekJoon/boj_11655.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +44,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.boj_11003">
-    <configuration name="boj_10799" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_10799" />
+  <component name="RunManager" selected="Application.boj_11655">
+    <configuration name="boj_10808" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_10808" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -55,8 +58,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boj_11003" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_11003" />
+    <configuration name="boj_10809" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_10809" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -68,8 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boj_12891" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_12891" />
+    <configuration name="boj_10820" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_10820" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boj_1406" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_1406" />
+    <configuration name="boj_11655" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_11655" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boj_17413" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_17413" />
+    <configuration name="boj_17298" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_17298" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.boj_11003" />
-        <item itemvalue="Application.boj_17413" />
-        <item itemvalue="Application.boj_12891" />
-        <item itemvalue="Application.boj_10799" />
-        <item itemvalue="Application.boj_1406" />
+        <item itemvalue="Application.boj_11655" />
+        <item itemvalue="Application.boj_10820" />
+        <item itemvalue="Application.boj_10808" />
+        <item itemvalue="Application.boj_10809" />
+        <item itemvalue="Application.boj_17298" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +132,9 @@
       <workItem from="1685059524003" duration="1826000" />
       <workItem from="1685371903864" duration="3563000" />
       <workItem from="1685406049665" duration="4974000" />
-      <workItem from="1685437529639" duration="9771000" />
+      <workItem from="1685437529639" duration="18679000" />
+      <workItem from="1686096695440" duration="2657000" />
+      <workItem from="1686528283362" duration="8303000" />
     </task>
     <servers />
   </component>
@@ -169,6 +174,11 @@
           <url>file://$PROJECT_DIR$/src/BaekJoon/boj_11003.java</url>
           <line>40</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BaekJoon/boj_17298.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

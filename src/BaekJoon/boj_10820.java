@@ -1,7 +1,7 @@
 package BaekJoon;
 
 // TODO: 2023/06/12  10820번 문자열 분석 (브론즈 2) https://www.acmicpc.net/problem/10820
-// TODO: 2023/06/12 !!성공!! 
+// TODO: 2023/06/12 !!성공!!
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
