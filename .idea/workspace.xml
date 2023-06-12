@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d77fa4a7-793b-4ba6-8afd-471ef475d663" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BaekJoon/boj_2743.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaekJoon/boj_10820.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaekJoon/boj_10820.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaekJoon/boj_11655.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaekJoon/boj_11655.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.boj_11655">
+  <component name="RunManager" selected="Application.boj_11656">
     <configuration name="boj_10808" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_10808" />
       <module name="Algorithm" />
@@ -97,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boj_17298" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_17298" />
+    <configuration name="boj_11656" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaekJoon.boj_11656" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.boj_11656" />
         <item itemvalue="Application.boj_11655" />
         <item itemvalue="Application.boj_10820" />
         <item itemvalue="Application.boj_10808" />
         <item itemvalue="Application.boj_10809" />
-        <item itemvalue="Application.boj_17298" />
       </list>
     </recent_temporary>
   </component>
