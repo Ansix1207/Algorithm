@@ -1,8 +1,6 @@
 package BaekJoon;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
@@ -16,6 +14,7 @@ public class boj_15654 {
     static boolean[] visited;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         //N개의 자연수와 자연수 M
         //N개의 자연수 중에서 M 개를 고른 수열
         StringTokenizer stk = new StringTokenizer(br.readLine());
@@ -32,6 +31,9 @@ public class boj_15654 {
         Arrays.sort(arr);
         dfs(n,m,0);
         System.out.println(sb);
+//        bw.append();
+        bw.write(sb.toString());
+        bw.flush();
     }
     static void dfs(int n,int m, int depth){
         if(m == depth){
