@@ -28,3 +28,4 @@ bin/
 ### Mac OS ###
 .DS_Store
 .idea/workspace.xml
+src/BaekJoon/boj_15654_2.java
