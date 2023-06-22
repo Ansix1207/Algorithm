@@ -6,6 +6,21 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 // TODO: 2023/06/22 1759번 암호만들기 (골드5)
+/**
+ * 최소 1개의 모음(a,e,i,o,u) 와 2개의 자음으로 이루어 져야 한다.
+ * 처음에는 for dfs 수행중에 자음인지 모음인지 체크하는 부분을 넣어서 카운팅을 해주었는데 모든 경우에 대해 체크함으로 비효율적으로 느껴졌음.
+ * isvalid 라는 이름으로 함수화를 진행하여 depth 만큼 들어갔을때 정답 체크를 할때 조건에 만족하는지 체크하였음.
+ * 알파벳이 증가하는 순서대로 배열되기때문에 Array.sort 를 사용해서 정렬먼저 해준다.
+ * 또한 앞에서 풀었던 N과 M 의 경우에는 abc bac도 정답이었지만 "증가하는 순서대로" 이기 때문에
+ * a t c i s w 를 입력받았을 경우 ==> a c i s t w 순으로 정렬되고 a에 대해서 dfs 재귀를 끝내고 나면 다시 사용해서는 안된다.
+ *
+ * 1번 풀이. depth를 넘겨서 탈출조건을 지정하면서, 앞선 값을 사용해서는 안되기 때문에 이전처럼 visited를 이용해서 앞에서부터 다시 탐색하는것이 아닌
+ * 현재 위치한 인덱스 + 1 을 넘겨서 다음 부분부터 탐색하도록 한다.
+ * for(int i = next ; i < m ; i ++){
+ *     solution[depth] = arr[i]
+ *     dfs(i+1,depth+1)
+ * }
+ * */
 public class boj_1759_암호만들기 {
     static char[] arr;
     static char[] solution;
@@ -47,9 +62,9 @@ public class boj_1759_암호만들기 {
          * a, ac ,act(2,2,4), actw(5,3,5)
          * */
         else {
-            for (int i = next ; i < m; i++) {
+            for (int i = next; i < m; i++) {
                 solution[depth] = arr[i];
-                dfs(i+1,depth+1);
+                dfs(i+1, depth + 1);
                 solution[depth] = 'X';
             }
         }
