@@ -6,8 +6,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-// TODO: 2023/06/21 11723번 집합 실버5 
-// TODO: 2023/06/21 !!성공!!
+// TODO: 2023/06/22 11723번 집합 실버5
+// TODO: 2023/06/22 !!성공!!
 public class boj_11723_집합 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
