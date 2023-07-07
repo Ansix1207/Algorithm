@@ -41,7 +41,7 @@ public class boj_16940_BFS스페셜저지 {
             System.out.println(0);
             return;
         }else{
-            if (bfs(1)) {
+            if (bfs2(1)) {
                 System.out.println(1);
             }else{
                 System.out.println(0);
@@ -49,6 +49,41 @@ public class boj_16940_BFS스페셜저지 {
         }
         br.close();
     }
+    static boolean bfs2(int start){
+        //큐 하나 만들기
+        Queue<Integer> q = new LinkedList<>();
+        //같은 레벨 정점 저장용 셋 하나 만들기.
+        //저장용 비짓 하나 만들기
+        boolean[] visit = new boolean[n + 1];
+        q.add(start);
+        visit[start] = true;
+        while (!q.isEmpty()) {
+            HashSet<Integer> set = new HashSet<>();
+            //뽑아서 비교해야함 result랑 저건 순서 저장용 리스트
+            int now = q.poll();
+            for (int v : list.get(now)) {
+                if (!visit[v]) {
+                    set.add(v);
+                    visit[v] = true;
+                }
+            }
+            if (!result.isEmpty()) {
+                for (int i = 0; i < set.size(); i++) {
+                    int res_cur = result.poll();
+                    if (set.contains(res_cur)) {
+//                        set.remove(res_cur);
+                        q.add(res_cur);
+                    }
+                    else{
+                        return false;
+                    }
+                }
+            }
+//            set.clear();
+        }
+        return true;
+    }
+
     static boolean bfs(int start){
         Queue<Integer> q = new LinkedList<>();
         HashSet<Integer> temp = new HashSet<>(); //지역 정점 저장 HashSet
