@@ -4,11 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.StringTokenizer;
 
 // TODO: 2023-06-13 2309번 일곱 난쟁이 (브론즈1)
-// TODO: 2023-06-13(013) !!성공!!
-public class boj_2309 {
+// TODO: 2023-06-13(013) !!성공!! https://www.acmicpc.net/problem/2309
+public class boj_2309_일곱난쟁이 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] arr = new int[9];
@@ -24,13 +23,12 @@ public class boj_2309 {
                     arr[i] = 0;
                     arr[j] = 0;
                     Arrays.sort(arr);
-                    for (int k= 2; k < 9; k++) {
+                    for (int k = 2; k < 9; k++) {
                         System.out.println(arr[k]);
                     }
                     return;
                 }
             }
         }
-
     }
 }
