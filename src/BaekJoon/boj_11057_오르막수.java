@@ -3,7 +3,6 @@ package BaekJoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 // TODO: 2023/08/03 11057번 오르막수 (실버1) https://www.acmicpc.net/problem/11057 
 // TODO: 2023/08/03 !!성공!!
