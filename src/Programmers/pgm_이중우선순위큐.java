@@ -3,7 +3,7 @@ package Programmers;
 import java.util.PriorityQueue;
 
 // TODO: 2023/08/24 42628번 이중우선순위큐(레벨3) [힙]  https://school.programmers.co.kr/learn/courses/30/lessons/42628
-// TODO: 2023/08/24 성공!! 
+// TODO: 2023/08/24 성공!!
 public class pgm_이중우선순위큐 {
     public static void main(String[] args) {
         Solution solution = new Solution();
