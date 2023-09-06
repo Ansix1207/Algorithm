@@ -24,7 +24,6 @@ class Solution {
                 if( Math.abs(lost[i]-reserve[j])==1){
                     answer+=1;
                     tj=j+1;
-                    reserve[j] = -1;
                     break;
                 }
             }
