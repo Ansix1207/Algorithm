@@ -24,7 +24,7 @@ class Solution {
                 answer = -1;
                 return answer;
             }
-            while (sum1 != sum2) {
+            while (sum1 != goal) {
                 if(answer>(queue1.length+queue2.length) * 4 ){
                     return -1;
                 }
@@ -35,9 +35,10 @@ class Solution {
                     q1.offer(val);
                 }else{
                     //sum1, 즉 q1의 합이 더 클 경우
-                    sum2 += q1.peek();
-                    sum1 -= q1.peek();
-                    q2.offer(q1.poll());
+                    long val = q1.poll();
+                    sum2 += val;
+                    sum1 -= val;
+                    q2.offer(val);
                 }
             if (q2.isEmpty() || q1.isEmpty()) {
                     answer = -1;
