@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
         public int solution(int[] priorities, int location) {
             int answer = 0;
-            PriorityQueue<Integer> pq = new PriorityQueue<>((o1, o2) -> o2 - o1); // 내림차순 정렬
+            PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); // 내림차순 정렬
             for (int priority : priorities) {
                 pq.offer(priority);
             }
