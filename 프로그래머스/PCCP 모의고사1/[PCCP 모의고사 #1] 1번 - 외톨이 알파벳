@@ -1,0 +1,29 @@
+import java.util.*;
+class Solution {
+    public String solution(String input_string) {
+        String answer = "";
+        Map<Character,Integer> map = new TreeMap();
+        Set<Character> set = new TreeSet();
+        input_string+="/";
+        map.put(input_string.charAt(0),1);
+        int w = 1;
+        for(int i = 1 ; i < input_string.length(); i ++){
+            
+            char current = input_string.charAt(i);
+            char prev = input_string.charAt(i-1);
+            if(prev != current){ // 이전 글자와 다르면
+                if(map.containsKey(current)){
+                    set.add(current);
+                }
+                map.put(current,map.getOrDefault(current,0)+1);
+            }
+        }
+        if(set.isEmpty()){
+            answer = "N";
+        }
+        for(char c : set){
+            answer+=c;
+        }
+        return answer;
+    }
+}
