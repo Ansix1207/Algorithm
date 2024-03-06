@@ -20,14 +20,10 @@ public class Main {
         }
         while (!pq.isEmpty()) {
             Point plan = pq.remove();
-            if (room.isEmpty()) {
-                room.add(plan.y);
-            } else if (plan.x>=room.peek()) {
+            if (!room.isEmpty() && room.peek() <= plan.x) {
                 room.remove();
-                room.add(plan.y);
-            }else{
-                room.add(plan.y);
             }
+            room.add(plan.y);
         }
         System.out.println(room.size());
 
