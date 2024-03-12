@@ -6,6 +6,7 @@ import java.util.PriorityQueue;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuffer sb = new StringBuffer();
         int T = Integer.parseInt(br.readLine());
         for (int i = 0; i < T; i++) {
             int n = Integer.parseInt(br.readLine());
@@ -20,7 +21,9 @@ public class Main {
                 pq.add(x+y);
                 sum += x+y;
             }
-            System.out.println(sum);
+            sb.append(sum+"\n");
         }
+        System.out.println(sb.toString());
+
     }
 }
