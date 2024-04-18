@@ -1,46 +1,45 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 public class Main {
+    static StringBuilder answer = new StringBuilder();
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
-
-        StringBuilder answer = new StringBuilder();
-        while (T-- > 0) {
-            String input = br.readLine();
-            StringBuilder sb = new StringBuilder(input);
-            String result = "2";
-
-            // 회문
-            if (input.equals(sb.reverse().toString())) {
-                result = "0";
-            }
-
-            // 유사회문
-            else {
-                int left = 0;
-                int right = input.length() - 1;
-                while (left < right) {
-                    if (input.charAt(left) != input.charAt(right)) {
-                        // 왼쪽, 오른쪽 각각 지워봄
-                        StringBuilder delLeft = new StringBuilder(input).deleteCharAt(left);
-                        StringBuilder delRight = new StringBuilder(input).deleteCharAt(right);
-
-                        // 둘중 하나라도 성사되면 유사회문
-                        if (delLeft.toString().equals(delLeft.reverse().toString()) || delRight.toString().equals(delRight.reverse().toString())) {
-                            result = "1";
-                        }
-                        break;
-                    }
-                    left++;
-                    right--;
-                }
-            }
-            answer.append(result).append("\n");
+        for (int i = 0; i < T; i++) {
+            check(br.readLine(), 0);
         }
-        answer.deleteCharAt(answer.length() - 1);
-        System.out.print(answer);
-   }
+
+        System.out.println(answer);
+    }
+    static boolean check(String str, int level){
+        String tmp = new StringBuilder(str).reverse().toString();
+        if (tmp.equals(str)) {
+            if (level == 0) {
+                answer.append("0\n");
+            }
+            return true;
+        } else if (level == 0) {
+            int left = 0;
+            int right = str.length()-1;
+            while (left <= right) {
+                if (str.charAt(left) != str.charAt(right)) {
+                    String leftDeleteStr = new StringBuilder(str).deleteCharAt(left).toString();
+                    String rightDeleteStr = new StringBuilder(str).deleteCharAt(right).toString();
+                    if (check(rightDeleteStr, 1) || check(leftDeleteStr, 1)) {
+                        answer.append("1\n");
+                        return true;
+                    }
+                    //틀린 한글자를 빼고 비교했음에도 틀린 경우
+                    answer.append("2\n");
+                    return false;
+                }
+                right--;
+                left++;
+            }
+
+        }
+        return false;
+    }
 }
