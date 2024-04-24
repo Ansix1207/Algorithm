@@ -19,14 +19,17 @@ public class Main {
             }
         }
         int k = Integer.parseInt(br.readLine());
-
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < k; i++) {
             stk = new StringTokenizer(br.readLine());
             int x1 = Integer.parseInt(stk.nextToken());
             int y1 = Integer.parseInt(stk.nextToken());
             int x2 = Integer.parseInt(stk.nextToken());
             int y2 = Integer.parseInt(stk.nextToken());
-            System.out.println(dp[x2][y2] - dp[x1-1][y2] - dp[x2][y1-1] + dp[x1-1][y1-1]);
+            int sum = dp[x2][y2] - dp[x1 - 1][y2] - dp[x2][y1 - 1] + dp[x1 - 1][y1 - 1];
+            sb.append(sum).append("\n");
         }
+        System.out.println(sb.toString());
+
     }
 }
